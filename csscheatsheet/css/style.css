@@ -1,0 +1,200 @@
+/* 
+
+Selector {
+    property: value;
+} 
+
+*/
+
+
+
+/* Targets everything */
+/* 
+*{
+ margin: 0;
+ padding: 0;
+}
+*/
+
+
+body{
+    background-color: #f4f4f4;
+    color: #555;
+
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; This one is nice as well */
+    font-size: 16px;
+    font-weight: normal;
+    /* Same as above */
+    font: normal 16px Arial, Helvetica, sans-serif;
+
+    /* More space between lines */
+    line-height: 1.6em; 
+    margin: 0;
+
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: red;
+}
+
+a:active{
+    color: green;
+}
+
+/* a:visited{
+    color: purple;
+} */
+
+.clr{
+    clear: both;
+}
+
+
+
+/* ID's for unique items */
+/* Classes can be reused */
+
+/* To target a class we use a . */
+
+.container{
+    /* Use percents when dealing with containers for the most part */
+    width: 80%;
+    margin: auto;
+}
+
+.box-1{
+    background-color: #333;
+    color: white;
+
+    border: 4px red solid;
+    /* solid dotted dashed double none hidden */
+
+    padding: 20px;
+    margin: 20px 0;
+
+}
+
+.box-1 h1{
+    font-family: tahoma;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+
+}
+
+.box-2{
+    border: 3px black dotted;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border: 1px gray solid;
+    padding: 10px;
+    /* Creates curved edges */
+    border-radius: 15px;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0 20px;
+    list-style: square;
+    list-style: none;
+}
+
+.categories li{
+    padding-bottom: 6px;
+    border-bottom: 1px black solid;
+    list-style-image: url('../images/check.jpeg');
+}
+
+.my-form{
+    /* border: red 5px solid; */
+    padding: 20px;
+}
+
+.my-form .form-group{
+    padding-bottom: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.button{
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid black;
+    padding: 15px;
+
+    /* This takes at the extra pixel from padding and border and applies it to  width itself */
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    border: 1px solid black;
+    margin-top: 30px;
+    background-image: url(../images/bgimage.jpeg);
+    background-position: 100px 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child{
+    background: blue;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: gray;
+}
